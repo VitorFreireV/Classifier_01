@@ -19,4 +19,4 @@ page = {'url': 'xxx', 'html' : """HTML""", 'ip': 'x.x.x.x', 'redirect' : 0}
 
 model = Classifier()
 
-reponse = model.predict(page)
+response = model.predict(page)
