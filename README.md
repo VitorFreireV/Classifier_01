@@ -14,6 +14,9 @@ Exemplo:
 
 from classifier import Classifier
 
+
 page = {'url': 'xxx', 'html' : """HTML""", 'ip': 'x.x.x.x', 'redirect' : 0}
+
 model = Classifier()
+
 reponse = model.predict(page)
