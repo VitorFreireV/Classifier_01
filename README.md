@@ -10,6 +10,10 @@ Redirect é número de redirecionamentos(tenho que melhorar a função de acordo
 
 Retorna 1 caso classifique como phishing e 0 como spam.
 
-Exemplo de dicionario de entrada:
+Exemplo
 
-{'url': 'http://sing.pish.ounao.goggle.com/', 'html': """ <!DOCTYPE html>\n<html>\n<body>My first paragraph\n</body>\n</html>""", 'ip' : '0.11.0.1', 'redirect': 0}
+from classifier import Classifier
+
+page = {'url': 'xxx', 'html' : """HTML""", 'ip': 'x.x.x.x', 'redirect' : 0}
+model = Classifier()
+reponse = model.predict(page)
