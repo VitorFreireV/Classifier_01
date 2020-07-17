@@ -12,4 +12,4 @@ Retorna 1 caso classifique como phishing e 0 como spam.
 
 Exemplo de dicionario de entrada:
 
-{'url': 'http://sing.pish.ounao.goggle.com/', 'html': """ <!DOCTYPE html>\n<html>\n<body>\n<\h\1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>""", 'ip' : '0.11.0.1', 'redirect': 0}
+{'url': 'http://sing.pish.ounao.goggle.com/', 'html': """ <!DOCTYPE html>\n<html>\n<body>My first paragraph\n</body>\n</html>""", 'ip' : '0.11.0.1', 'redirect': 0}
