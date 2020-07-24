@@ -17,15 +17,12 @@ class Classifier():
         
         instance = []
         for i in range(len(clf_positions)):
-            if clf_positions[i] == 'NumberRedirect':
-                 instance.append(dic_html['redirect'])
-            else:    
                 instance.append(dic[clf_positions[i]])    
         return self.model.predict([instance])[0]
 
 
 '''
-dic = {'url': 'http://sing.pish.ounao.goggle.com/', 'html': """ <!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>""", 'ip' : '0.11.0.1', 'redirect' : 0}
+dic = {'url': 'http://sing.pish.ounao.goggle.com/', 'html': """ <!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>""", 'ip' : '0.11.0.1'}
 
 classificador = Classifier()
 print(classificador.predict(dic))
