@@ -1,12 +1,12 @@
 from preprocess.URLModel import Pre_processing_URL
 from preprocess.HTMLModel import Pre_processing_HTML
 from sklearn.ensemble import RandomForestClassifier
-from model.clf_positions import clf_positions
+from model.abc_positions import abc_positions
 import joblib
 
 class Classifier():
     def __init__(self):
-        self.model = joblib.load('model/clf')    
+        self.model = joblib.load('model/abc')    
 
     def predict(self, dic_html):
         pre_url = Pre_processing_URL()
@@ -16,14 +16,6 @@ class Classifier():
         
         
         instance = []
-        for i in range(len(clf_positions)):
-                instance.append(dic[clf_positions[i]])    
+        for i in range(len(abc_positions)):
+                instance.append(dic[abc_positions[i]])    
         return self.model.predict([instance])[0]
-
-
-'''
-dic = {'url': 'http://sing.pish.ounao.goggle.com/', 'html': """ <!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>""", 'ip' : '0.11.0.1'}
-
-classificador = Classifier()
-print(classificador.predict(dic))
-'''
