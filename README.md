@@ -4,7 +4,7 @@ Em processo
 Python 3.8, libs em requirements.txt.
 
 # ORGANIZAÇÃO DO CÓDIGO
-Em preprocess estão os módulos de pré processamento assim como a base de conhecimento utilizada. Os modulos de pré processamento são dividos em URLModel, HTMLModel e EXTERNModel. Divisão feita de acordo com características dos atributos, em URLModel são atributos gerados a partir de url, em HTMLModel são atributos gerados a partir do código fonte da pagina e o EXTERNModel são atributos gerados a partir de fontes externas/redes como check Alexa, tempo de domínio, tempo de SLL e etc. Recurso de URL são os mais rápidos de serem gerados, seguidos de recursos provindo de HTML e por último de fontes externas. Cada módulo de extração funciona da mesma forma.
+Em preprocess estão os módulos de pré processamento assim como a base de conhecimento utilizada. Os modulos de pré processamento são divididos em URLModel, HTMLModel e EXTERNModel. Divisão feita de acordo com características dos atributos, em URLModel são atributos gerados a partir de url, em HTMLModel são atributos gerados a partir do código fonte da pagina e o EXTERNModel são atributos gerados a partir de fontes externas/redes como check Alexa, tempo de domínio, tempo de SLL e etc. Recurso de URL são os mais rápidos de serem gerados, seguidos de recursos provindo de HTML e por último de fontes externas. Cada módulo de extração funciona da mesma forma.
 
 ## Função modulo.set_features(lista_de_atributos)
 Recebe uma lista de strings com os nomes dos atributos e seta para gerar somente esses atributos. Todos os nomes estão disponíveis nas listas preprocess/features_config.py.
