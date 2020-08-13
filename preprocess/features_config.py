@@ -9,7 +9,6 @@ HTML_LIST =['ForeignhyperlinksRule1',#1.13
         #'NumberRedirect' : self.get_NumberRedirect,
         #'numberOfLinksPointPage': self.get_numberOfLinksPointPage, #1.28
         'ServerFormHandler',
-
         'EmbeddedBrandName', #2.26
         'Foreignhyperlinks', # 2.28
         'URLofAnchorCat', #2.34
